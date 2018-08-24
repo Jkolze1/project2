@@ -41,73 +41,92 @@
 
 <!--form-->
 <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <label for="exampleSelect1">Example select</label>
-          <select class="form-control" id="exampleSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleTextarea">Example textarea</label>
-          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputFile">File input</label>
-          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-          <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-        </div>
-        <fieldset class="form-group">
-          <legend>Radio buttons</legend>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Option one is this and that&mdash;be sure to include why it's great
-            </label>
+    <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <!--First collumn-->
+                <div class="form-group mx-sm-3 mb-2">
+                    <!--Year Info-->
+                    <p>Year:</p>
+                        <label for="inputPassword2" class="sr-only">Year</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Year...">
+                        <!--Body style/Checkboxs-->
+                        <br>
+                        <p>Bodystyle:</p>
+                        <div class="form-check form-check-inline">
+                            <!--Two door car option-->
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Two door</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <!--Four door car option-->
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Four door</label>
+                              </div>
+                              <br><br>
+                              <p> Auto type:</p>
+                            <!--Auto type-->
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Car</label>
+                                  </div>
+                                  <!--Truck-->
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">Truck</label>
+                                  </div>
+                                  <!--SUV-->
+                                  <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">SUV</label>
+                                      </div>
+                                      <!--Motorcycle-->
+                                      <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Motorcycle</label>
+                                      </div>
+                                          <br><br>
+                                          <!--Model-->
+                                          <p> Model:</p>
+                                          <label for="inputPassword2" class="sr-only">Model</label>
+                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Model...">
+                    <br>
+                    <!--color-->
+                    <p>Color:</p>
+                                            <label for="inputPassword2" class="sr-only">Color</label>
+                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Color...">
+                      <!--Submit button-->
+                      <br>
+                      <button type="button" class="btn btn-primary">Primary</button>
+                                        </div>
+
+                  
+                    
+        
           </div>
-          <div class="form-check">
-          <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-              Option two can be something else and selecting it will deselect option one
-            </label>
+          <div class="col">
+                <div class="form-group mx-sm-3 mb-2">
+                    <!--Mileage Info-->
+                        <p>Mileage:</p>
+                            <label for="inputPassword2" class="sr-only">Mileage</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Mileage...">
+                          </div>
+                          <br><br><br><br><br><br><br><br>
+                        <!--Make-->
+                        <p> Make:</p>
+                        <label for="inputPassword2" class="sr-only">Model</label>
+                          <input type="password" class="form-control" id="inputPassword2" placeholder="Model...">
+
+                          
+
           </div>
-          <div class="form-check disabled">
-          <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-              Option three is disabled
-            </label>
+          <div class="col">
+      
           </div>
-        </fieldset>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="checkbox" class="form-check-input">
-            Check me out
-          </label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      </div>
+</form>
 
 
     <!-- Optional JavaScript -->
