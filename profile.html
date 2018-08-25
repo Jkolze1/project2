@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>JAB Auto</title>
   </head>
   <body>
 
@@ -18,9 +18,9 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+   
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="nav navbar-nav ml-auto">
             <li class="nav-item active">
             <li class="nav-item">
               <a class="nav-link" href="#">Log in</a>
@@ -28,108 +28,80 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Profile</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Sign Up</a>
+            </li>
           </ul>
         </div>
       </nav>
-      <!--Jumbotron/home-->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Title</h1>
-          <p class="lead">Description of project goes here. Blah, blah, blah.</p>
-        </div>
-      </div>
 
-<!--form-->
-<form>
-    <div class="container">
-
-        <div class="row">
-          <div class="col">
-            <!--First collumn-->
-                <div class="form-group mx-sm-3 mb-2">
-                    <!--Year Info-->
-                    <p>Year:</p>
-                        <label for="inputPassword2" class="sr-only">Year</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Year...">
-                        <!--Body style/Checkboxs-->
-                        <br>
-                        <p>Bodystyle:</p>
-                        <div class="form-check form-check-inline">
-                            <!--Two door car option-->
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">Two door</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <!--Four door car option-->
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">Four door</label>
-                              </div>
-                              <br><br>
-                              <p> Auto type:</p>
-                            <!--Auto type-->
-                            <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Car</label>
-                                  </div>
-                                  <!--Truck-->
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                    <label class="form-check-label" for="inlineCheckbox2">Truck</label>
-                                  </div>
-                                  <!--SUV-->
-                                  <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                        <label class="form-check-label" for="inlineCheckbox2">SUV</label>
-                                      </div>
-                                      <!--Motorcycle-->
-                                      <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">Motorcycle</label>
-                                      </div>
-                                          <br><br>
-                                          <!--Model-->
-                                          <p> Model:</p>
-                                          <label for="inputPassword2" class="sr-only">Model</label>
-                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Model...">
-                    <br>
-                    <!--color-->
-                    <p>Color:</p>
-                                            <label for="inputPassword2" class="sr-only">Color</label>
-                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Color...">
-                      <!--Submit button-->
-                      <br>
-                      <button type="button" class="btn btn-primary">Primary</button>
-                                        </div>
-
-                  
-                    
-        
-          </div>
-          <div class="col">
-                <div class="form-group mx-sm-3 mb-2">
-                    <!--Mileage Info-->
-                        <p>Mileage:</p>
-                            <label for="inputPassword2" class="sr-only">Mileage</label>
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Mileage...">
-                          </div>
-                          <br><br><br><br><br><br><br><br>
-                        <!--Make-->
-                        <p> Make:</p>
-                        <label for="inputPassword2" class="sr-only">Model</label>
-                          <input type="password" class="form-control" id="inputPassword2" placeholder="Model...">
-
-                          
-
-          </div>
-          <div class="col">
       
+      <!--Actual profile stuff-->
+      <br><br>
+      <!--columns for profile stuff-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <form>
+                <div class="col-md-8 order-md-1">
+                  <h4 class="mb-3">User Profile</h4>
+                  <form class="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="mb-3">
+                      <label for="username">Username</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                          Your username is required.
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="mb-3">
+                      <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                      <div class="invalid-feedback">
+                        Please enter a valid email address.
+                      </div>
+                    </div>
+                    <!--Button for profile-->
+                    <button type="button" class="btn btn-primary">Update!</button>
+                    </form>
+          </div>
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+            <!--If we decide to procede, put profile picture here-->
+            <br>
+            <button type="button" class="btn btn-primary">List a new car</button>
           </div>
         </div>
       </div>
-</form>
+     
 
 
-    <!-- Optional JavaScript -->
+
+
+       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
